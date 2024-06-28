@@ -1,0 +1,31 @@
+<IDOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lab Django Website</title>
+    </head>
+    <body style="background-color: gainsboro; text-align: center;
+          font-family: Tahoma; margin-top: 10px">
+    <h1 style="color: blue">Input Summation</h1>
+    <br>
+    <br>
+    <form method="post" action="sum_if">
+        {% csrf_token %}
+        insert text: <textarea name="input_text" rows="1" cols="80"></textarea>
+        <br>
+        <select name="menu" size="1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+        <input type="submit">
+    </form>
+    </body>
+    </html>
